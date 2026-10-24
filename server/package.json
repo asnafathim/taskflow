@@ -1,0 +1,27 @@
+{
+  "name": "taskflow-server",
+  "version": "1.0.0",
+  "description": "Backend API for TaskFlow MERN To-Do List Application",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch --watch-path=.env src/server.js"
+  },
+  "keywords": [
+    "mern",
+    "express",
+    "mongodb",
+    "todo"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.8.0"
+  }
+}
