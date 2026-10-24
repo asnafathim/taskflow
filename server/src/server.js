@@ -15,7 +15,12 @@ const CLIENT_ORIGIN = process.env.CLIENT_ORIGIN || 'http://localhost:5173';
 // Middleware: Enable CORS for frontend requests
 app.use(
   cors({
-    origin: [CLIENT_ORIGIN, 'http://localhost:5173', 'http://127.0.0.1:5173'],
+    origin: [
+  CLIENT_ORIGIN,
+  'http://localhost:5173',
+  'http://127.0.0.1:5173',
+  'https://taskflow-1-d7u7.onrender.com'
+],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS']
   })
